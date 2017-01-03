@@ -1,0 +1,3 @@
+em:
+strong: negrito
+mark: marcar um texto.
