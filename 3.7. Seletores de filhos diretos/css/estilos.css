@@ -1,0 +1,36 @@
+/*
+	EXPLICAÇÃO:
+
+	Seletores de filhos diretos.
+	Ex:
+	Em body (e espaço) busca todos os descendentes de body que possui a classe título.
+	 body .titulo {
+
+	};
+
+	Ex02:
+	Busca todos os filhos diretos que possui a classe titulo. Ex: dentro de body tem uma tag <p .titulo>
+	írá encaixar no parágrafo, porque .titulo faz parte de p. Agora se tivesse outra tag dentro de <p> <strong>
+	com a classe .titulo dentro seria filho de <p> e neto de <body>
+	body > .titulo {
+
+	};
+
+___________
+*/
+
+/*
+article > .importante {	um article que tem um filho direto (no caso uma classe direta chamada .importante
+	color: red;
+}
+
+article > .importante > strong {	um artigo que possui um filho direto .importante e que possui um filho direto strong.
+	color: red;
+}
+
+*/
+
+article .importante > strong {	/*um article que possui em qualquer lugar(seja filho,neto,bisneto...) uma classe .importante e que possui um filho direto(> simbolo) strong*/
+	color: blue;
+}
+
