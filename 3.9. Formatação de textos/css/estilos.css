@@ -1,0 +1,27 @@
+
+.nome {
+	color: #f00;
+
+	/*
+	font-size: 24px;
+	font-family: "Trebuchet MS", sans-serif;
+	font-style: italic;
+	font-weight: bold;
+
+	Obs: no font-family devo usar mais de uma fonte separado por vírgula e fontes com nomes dois devem
+	ter aspas duplas conforme exemplo acima. O motivo de ter mais de uma fonte é que se o navegador
+	não encontrar a primeira fonte usa a segunda e assim sucessivamente. Vale lembrar que temos fontes
+	com serif (chamada de serif) e sem serif ( chamada sans-serif). Fontes 'serifadas' são fontes que
+	possuem um ponta nas letras, se as fontes utilizadas forem serifadas devemos terminar a lista de 
+	fontes com "serif" e caso não seja devemos terminar com "sans-serif" como exemplo acima. Então o
+	navegador vai utilizar um tipo de fonte genérico serifado ou não, depedendo do escolhido.
+
+	*/
+
+	/* Especificar tudo junto */
+	font: italic bold 24px "Trebuchet MS", sans-serif;
+
+	text-decoration: underline;
+	text-align: center;	/*centralizado de acordo com seu pai que é uma div criada o html de 500 px.*/
+
+}
