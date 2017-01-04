@@ -1,4 +1,4 @@
-h1 {
+/*h1 {
 	font font-family: Verdana;
 }
 
@@ -12,4 +12,19 @@ h1 {
 
 p.missao {
 	font-family: Arial;
+}*/
+
+#titulo {
+	color: red;
+	font-family: Arial;
+	font-size: 26px;
+}
+
+p {
+	font-family: Verdana;
+	color: blue;
+}
+
+.missao, .destaque {
+	font-size: 20px;
 }
