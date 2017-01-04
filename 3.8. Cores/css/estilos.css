@@ -1,0 +1,25 @@
+
+.caixa1 {
+	background-color: blue;
+	color: white;
+}
+
+.caixa2 {
+	background-color: rgb(255, 0, 0);
+	color: rgb(0, 0, 0);
+}
+
+.caixa3 {
+	background-color: rgb(255, 200, 0);  ;
+	color: rgb(255, 255, 255);
+}
+
+.caixa4 {
+	background-color: #ff00c8 ;	/*Hexadecimal: 0123456789ABCDEF*. ff (branco) 00 (preto)*/
+	color: #ddff00;
+}
+
+.caixa5 {
+	background-color: #66ff33 ;
+	color: #000;	/* hexadecimal é represetado por 6 cores, se repetem #ff5566 pode fazer: #f56. */
+}
