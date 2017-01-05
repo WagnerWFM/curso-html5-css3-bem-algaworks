@@ -8,12 +8,12 @@
 	font-style: italic;
 	font-weight: bold;
 
-	Obs: no font-family devo usar mais de uma fonte separado por vírgula e fontes com nomes dois devem
-	ter aspas duplas conforme exemplo acima. O motivo de ter mais de uma fonte é que se o navegador
+	Obs: No font-family devo usar mais de uma fonte separado por vírgula e, fontes com dois nomes devem
+	ter aspas duplas, conforme exemplo acima. O motivo de ter mais de uma fonte é que se o navegador
 	não encontrar a primeira fonte usa a segunda e assim sucessivamente. Vale lembrar que temos fontes
-	com serif (chamada de serif) e sem serif ( chamada sans-serif). Fontes 'serifadas' são fontes que
-	possuem um ponta nas letras, se as fontes utilizadas forem serifadas devemos terminar a lista de 
-	fontes com "serif" e caso não seja devemos terminar com "sans-serif" como exemplo acima. Então o
+	serifadas (chamada de serif) e não serifadas ( chamada sans-serif). Fontes 'serifadas' são fontes 
+	que possuem umas pontas nas letras. Se as fontes utilizadas forem serifadas devemos terminar a lista
+	de fontes com "serif" e caso não seja devemos terminar com "sans-serif" como exemplo acima. Então o
 	navegador vai utilizar um tipo de fonte genérico serifado ou não, depedendo do escolhido.
 
 	*/
@@ -23,5 +23,9 @@
 
 	text-decoration: underline;
 	text-align: center;	/*centralizado de acordo com seu pai que é uma div criada o html de 500 px.*/
+}
 
+.segmento {
+	/*Fonte serifada*/
+	font-family: Palantino, serif;	
 }
