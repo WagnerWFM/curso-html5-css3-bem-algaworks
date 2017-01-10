@@ -1,0 +1,53 @@
+/*
+	EXPLICAÇÃO:
+	*Tipos de display:;
+	inline: não podem ser definidos altura e largura e margem(espaço em torno), fica um do lado do outro e na mesma linha, o 
+			elemento ocupa somente o que precisar(no caso de um texto, ocupa somente o tamanho do texto)
+			, um exemplo são os links que como alguns elementos vem por padrão 'display: block'.
+	block: ao contrário do inline, podem ser definidos altura e largura e se não forem definidos, cada
+			elemento ocupa a linha toda( para ver basta criar um div conforme foi feito neste exemplo).
+			Alguns elementos são por default 'display:block', como os parágrafos.
+	inline-block: são elementos inline (fica um ao lado do outro) que se comportam como um block, podem
+				   ser definidos altura e largura por exemplo.
+*/
+
+
+body {
+	font-size: 32px;
+}
+
+.nome-empresa {
+	background-color: pink;
+}
+
+.segmento-empresa {
+	background-color: red;
+}
+
+.curso-html {
+	background-color: #00dd00;
+}
+
+.curso-css {
+	background-color: #fdff11;
+}
+
+.curso-java {
+	background-color:#00dddd;
+}
+
+.curso-bootstrap {
+	background-color: #ee00da;
+}
+
+.nome-empresa, .segmento-empresa {	/*links que por default são inline agora ficam block o display*/
+	display: block;	/* display 'block' aceita definir altura e largura*/
+	height: 100px;	
+	width: 300px;
+}
+
+.curso-html, .curso-css {
+	display: inline-block; /*display inline-block o elemento se comporta como um block (pode ser 
+							 definido alura e largura por exemplo e, aparece na tela como inline 
+							 (na mesma linha e um do lado do outro)*/
+}

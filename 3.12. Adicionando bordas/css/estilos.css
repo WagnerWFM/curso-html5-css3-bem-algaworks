@@ -1,0 +1,26 @@
+
+body {
+	font-size: 32px;
+}
+
+a {
+	border-width: thick;	/*tipo grossa.*/
+	border-color: red;
+	border-style: dashed;/* estilo pontilhada.*/
+
+	border-bottom: 5px dotted #0f0;	/* mudando expessura,estilo e cor bordar 'inferior'*/ 
+	border-right: 5px dotted #f00;	/* mudando expessura,estilo e cor bordar 'direita'*/ 
+
+	/* definir tudo junto
+		border: thick blue dotted;
+	*/
+}
+
+p {
+	height: 300px;
+	width: 300px;
+	border: 5px solid black;
+	border-radius: 20px 10px 0px 50px;	/*sentido horário. Podemos definir apenas duas propriedade também*/
+
+	background-color: #ccc;
+}
