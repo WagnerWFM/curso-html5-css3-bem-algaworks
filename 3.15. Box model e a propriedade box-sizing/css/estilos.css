@@ -1,0 +1,53 @@
+
+/* EXPLICAÇÃO:
+ - box-sizing: 
+ 
+ *content-box é o default onde a caixa cresce de acordo com o conteúdo que tem dentro.Ex: se defino width: 500px e
+ 			 coloco padding de 20px nas laterais, vou ficar de largura: ( 20 + 20 + 500 = 540 de largura ),
+ 			 algo que não acontece na propriedade acima.
+ *border-box a caixa não aumenta de tamanho e o conteúdo vai se encaixando dentro.
+
+
+Podemos definir tudo como border
+
+* {
+	box-sizing: border-box;
+}
+
+
+*/
+
+body {
+	font-size: 32px;
+	margin: 0;
+}
+
+.frase1, .frase2, .referencia {
+	width: 500px;	/*Acredito que geralmente a altura não específicamos quando usamos 'boder-box', 
+						já que a caixa não cresce o conteúd aumenta para baixo.*/
+
+	text-align: justify;
+	background-color: yellow;	
+}
+
+p {
+	margin: 10px;
+}
+
+.referencia {
+	background-color: blue;
+	height: 20px;
+}
+
+.frase1 {
+	box-sizing: content-box ;	/*È o padrão, o box aumenta de acordo com o conteúdo.*/
+	padding: 20px;
+	border: 3px solid red;
+}
+
+.frase2 {
+	padding: 20px;
+	border: 20px solid red;
+
+	box-sizing: border-box;	/*Tamanho da caixa não aumenta. Diminui*/
+}
