@@ -3,7 +3,7 @@ body {
 }
 
 
-ul.menu {
+ul.menu {	/*em uma lista em qualquer lugar que estiver uma classe chamada menu.*/
 
 	list-style: none;	/*propriedade onde muda estilos como abc,123...*/
 	margin: 0;
