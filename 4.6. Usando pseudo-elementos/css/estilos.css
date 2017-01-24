@@ -1,0 +1,58 @@
+
+body {
+	font-size: 32px;
+}
+
+h1 {
+	margin: 0;
+}
+
+article {
+	background-color: #0f0;
+}
+
+footer {
+	background-color: yellow;
+	text-align: center;
+}
+
+.coluna1, .coluna2 {
+	background-color: #ccc;
+}
+
+.coluna1 {
+	float: left;
+	width: 48%;
+}
+
+.coluna2 {
+	float: right;
+	width: 48%;
+}
+
+article > p::first-letter {	/*pseudo elementos. Primeira letra de cada parágrafo alterada.*/
+	font-size: 60px;
+	color: red;
+}
+
+h1::before {
+	content: "Título: ";
+}
+
+h1::after {
+	content: " - Artigo";
+}
+
+/*O pseudo elemento abaixo tem a mesma função do clearfix usado na aula 4.5 flutuando elementos.*/
+
+article::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* .clearfix {	 informa que os elementos a partir daqu não vão mais flutuar, vai seguir os fluxo normal.
+	clear: both;
+} */
+
+
