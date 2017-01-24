@@ -90,3 +90,14 @@ article > footer {
 	
 }
 
+/*Pseudo elementos: article::after{}
+  Pseudo classe: .botao:hover{};
+*/
+
+.botao:hover, .botao:focus {
+	background-color: #0e6400;
+}
+
+
+
+
