@@ -42,7 +42,7 @@ article {
 	border: 1px solid #95a4a5;	
 }
 
-@media (min-width: 800px ) {
+@media (min-width: 800px ) {	/*aplica regras css quando atingir largura min. 800px*/
 
 article {
 	width: 30%;
