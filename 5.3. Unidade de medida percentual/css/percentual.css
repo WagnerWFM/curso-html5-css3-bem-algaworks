@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+html {  /*62.5% equivale a 10px conforme modelo abaixo.Conceito herança entre filhos html*/
+  font-size: 62.5%; /* 10px = 10 / 16 * 100 = 62.5% (em relação à fonte do navegador) */
+}
+
+.container {
+  width: 1000px;
+  background-color: yellow;
+}
+
+.caixa {  
+  width: 50%; /*ocupada 50% do seu pai (class="container"*/
+  padding: 10%;
+  margin-top: 10%;
+
+  font-size: 200%; /* 20px equivale. Já que seu pai html tem 10px definido acima. */
+
+  background-color: #ccc;
+  border: 5px solid black;
+}
+
+h1 {
+  font-size: 250%; /* 50px */
+}
+
+p {
+  font-size: 150%; /* 30px */
+}
+
+/*
+Observações gerais:
+*16 é o tamanho padrão dos navegadores para textos como parágráfos. Títulos(h1) são 32px.
+O correto é definir os tamanhos em percentual, quando mudamos o tamanho da fonte no navegador,
+o tamanho do texto altera e usando px o tamanho do texto vai ficar fixo, apenas o zoom funciona.
+
+Como calcular: deixar 30px em percentual, segue regra:
+30/16 = 1.875 * 100 = 187.5% que equivale a 30px.
+
+obs: border: 1px solid #ccc; Na borda nao é aceito unidade de medida pixel.
+*/
