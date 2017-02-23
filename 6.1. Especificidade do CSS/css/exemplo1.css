@@ -1,0 +1,35 @@
+/*
+Ordem de prioridade: ID CLASS TAG
+Para cada seletor (ID, CLASS ou TAG) colocamos a quantidade e depois verificamos qual número é maior e,
+o que for maior tem mais prioridade na regra css.
+Obs: Lembrando que o  a marcação ' !important ' tem mais prioridade, depois style inline e depois vem
+(ID, CLASS e TAG) como ordem de prioridade.
+
+*/
+
+/* ID CLASS TAG */
+
+
+body {
+	font-size: 32px;
+}
+
+h1 {	/* 001 */
+	color: red;
+}
+
+#logo {	/* 100 , então tem maior prioridade. 100 maior.*/
+	color: green;
+}
+
+.amarelo {	/* 010 */
+	color: yellow;
+}
+
+/*
+
+h1 {	- mesmo selector (h1) o que vem por último sobrescreve.
+	color: blue !important; - fica acima das regras css e não é boa prática ficar usando.
+}
+
+*/

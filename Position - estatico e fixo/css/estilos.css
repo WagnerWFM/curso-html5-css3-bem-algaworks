@@ -1,0 +1,48 @@
+/*
+ - static: É o padrão de todos os elementos.
+ fixa os elementos em relação a viewport.
+
+ - fixed: fixa o elemento na tela durante a barra de rolagem. Exemplo de uso: janela de chat no
+ 	canto inferior direito da página.
+*/
+
+.caixa1 {
+	font-size: 32px;
+	color: blue;
+	background-color: #fff;
+	width: 100%;
+	height: 60px;
+	padding-left: 10px;
+
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+
+	z-index: 9999;	/*valor para ficar sobre todos os elementos da págiina.*/
+	
+	/*pode se usar pripriedade dos 4 lados para posiciona o objeto.bottom. right, left e top.*/
+}
+
+.caixa2 {
+	background-color: green;
+	width: 100%;
+	height: 450px;
+}
+
+.caixa3 p {
+	font-size: 26px;
+}
+
+.caixa4 {
+	font-size: 32px;
+	color: blue;
+	background-color: yellow;
+	width: 30%;
+	height: 200px;
+	margin-bottom: 10px;
+
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+}

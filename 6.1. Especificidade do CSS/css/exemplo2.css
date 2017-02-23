@@ -1,0 +1,30 @@
+
+body {
+  font-size: 32px;
+}
+
+/* Ordem para cálculo (ID CLASS TAG). Lembrando que !important tem prioridade, seguido do style inline, depois essa regras de ID, CLASS e TAG tem prioridade. */
+
+header#cabecalho h1.logo {	/* 112 é a maior. */
+	color: yellow;
+}
+
+header#cabecalho .logo {	/* 111 */
+	color: purple;
+}
+
+#cabecalho .logo {	/* 110 */
+	color: red;	
+}
+
+header .logo {	/* 011 */
+	color: green;
+}
+
+header#cabecalho {	/* 101 */
+	color: black;
+}
+
+.logo {	/* 010 */
+	color: blue;	
+}

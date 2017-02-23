@@ -1,0 +1,38 @@
+
+/*
+	- REM: relativo ao tamanho original do documento ( o que é renderizado por padrão pelo navegador).
+		 Ex: por padrão a fonte do parágrafo tem 16px e título (h1) tem o dobro(2em);
+	- EM: media para indicar o tamanho da fonte do seu pai. Multiplica o tamanho da fonte do seu
+		  pai pelo valor do 'em'. Ex: pai 'div' tem 20px seusar 2em em um parágrafo interno ficaria
+		  com 40 px ( 2em * 20 = 40);
+	- PX: não é uma unidade muito recomendado para uso. Quando aumentamos o tamanho da fonte no
+	  navegador não conseguimos aumentar vaores definidos em px, somente o zoom fuunciona.;
+*/	
+
+body {
+	font-size: 2rem; /*Relativo a fonte padrão do navegador.Dobra p = 16px e h1 = 32px.*/
+}
+
+.texto h1 {	/*h1 filho de div (.texto). em são relativos todos ao body acima 2rem. Alterando o 2rem altera tudo abaixo.*/
+	font-size: 3em; /*h1 = 32 fica 3 * 32*/
+}
+
+.texto p {
+	padding: 0.5em;
+	margin-right: 3em;
+	border: 0.5em solid black ; 
+
+	font-size: 2em;	/* 32 x 2 = 64px*/
+}
+
+.texto span {
+	font-size: 0.5em;	/*Pai é o <p> que tem amanha, então a metáde 32px;*/
+}
+
+.comentarios {
+	font-size: 0.5rem;
+}
+
+.comentarios p {
+	font-size: 2em;
+}
